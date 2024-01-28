@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home/Home";
 import Portfolio from "../Pages/Portfolio/Portfolio";
 import About from "../Pages/About/About";
 import Expertise from "../Pages/Expertise/Expertise";
+import Contact from "../Pages/Contact/Contact";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/skill",
         element: <Expertise />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

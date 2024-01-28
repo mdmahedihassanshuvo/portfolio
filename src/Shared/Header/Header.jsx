@@ -84,7 +84,7 @@ const Header = () => {
           <ul className="menu menu-horizontal px-1 text-xl">{navList}</ul>
         </div>
         <div className="navbar-end">
-          <Link className="btn btn-ghost border-[1px] border-[#5e3bee]">
+          <Link to="/contact" className="btn btn-ghost border-[1px] border-[#5e3bee]">
             Contact Me
           </Link>
         </div>

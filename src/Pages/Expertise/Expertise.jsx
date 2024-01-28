@@ -79,7 +79,7 @@ const Expertise = () => {
           </>
         )}
       </div>
-      <div className="text-center md:mt-7">
+      <div className="text-center md:mt-7 mt-3">
         <button
           disabled={enable}
           onClick={handleActive}
