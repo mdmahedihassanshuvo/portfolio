@@ -5,12 +5,12 @@ import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (
-    <div className="md:py-[40px]">
+    <div className="md:py-[40px] p-[20px]">
       <Helmet title="MH - About Me" />
       <div className="flex flex-col md:flex-row justify-between items-center md:gap-[100px] md:mx-[100px]">
-        <div className="md:w-1/2 ">
+        <div className="md:w-1/2 md:mb-0 mb-5">
           <img
-            className="md:w-[80%] rounded-2xl float-right"
+            className="md:w-[80%] md:h-[457px] h-40 rounded-2xl float-right"
             src={person2}
             alt=""
           />
@@ -20,12 +20,12 @@ const About = () => {
             <span className="text-blue-600">About</span> Me
           </h3>
           <hr className="border-2" />
-          <div className="md:mt-5 md:space-y-4">
-          <p className="text-3xl font-bold">
+          <div className="md:mt-5 mt-2 md:space-y-4">
+          <p className="md:text-3xl text-xl font-bold">
             Hi I'm, <br />
             Md. Mahedi Hassan Shuvo
           </p>
-          <p className="text-2xl font-medium">FRONTEND WEB DEVELOPER IN DHAKA, BANGLADESH</p>
+          <p className="md:text-2xl text-lg font-medium">FRONTEND WEB DEVELOPER IN DHAKA, BANGLADESH</p>
           <p className="text-lg font-normal text-justify">
             As a web developer, my goal is to create engaging and intuitive web
             applications that enhance user experience. I’m eager to expand my
