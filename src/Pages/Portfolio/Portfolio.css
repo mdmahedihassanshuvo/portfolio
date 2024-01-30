@@ -1,0 +1,11 @@
+/* Portfolio.css */
+.coverdiv{
+    scroll-behavior: smooth;
+}
+.portfolio-image:hover {
+    transition: all 2s ease-in;
+    top: -155%;
+    /* bottom: -100%; */
+  }
+  
+  
