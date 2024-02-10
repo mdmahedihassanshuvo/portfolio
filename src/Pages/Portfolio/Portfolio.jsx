@@ -2,6 +2,7 @@ import React from "react";
 import porject1 from "../../assets/Project/bistro.png";
 import porject2 from "../../assets/Project/sport.png";
 import porject3 from "../../assets/Project/furniro.png";
+import porject4 from "../../assets/Project/canvix.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { FaGithub } from "react-icons/fa6";
@@ -93,6 +94,26 @@ const Portfolio = () => {
               <Link target="blank" to="https://github.com/mdmahedihassanshuvo/furniro-client" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium">Sourch code <FaGithub /></Link>
               <Link target="blank" to="https://fastidious-cuchufli-17d13f.netlify.app/" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium">Live Link <LuLink /></Link>
             </div>
+          </div>
+        </div>
+        <div className="bg-white rounded-lg">
+          <div className="coverdiv text-white overflow-hidden ">
+            <div className="md:w-full w-[350px] md:h-[250px] overflow-hidden relative cursor-pointer">
+              <img
+                className="portfolio-image w-full md:p-4  absolute left-0 right-0 top-0"
+                src={porject4}
+                alt="Bistro-boss"
+              />
+            </div>
+          </div>
+          <div className="bg-[#f7f7f7] md:m-4 p-4">
+            <h3 className="text-2xl font-semibold ">Canvix</h3>
+            <p className="text-sm text-slate-400 mt-2">Agency website</p>
+            <div className="flex justify-between md:mt-3 items-center">
+              <Link target="blank" to="https://github.com/mdmahedihassanshuvo/canvix" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium">Sourch code <FaGithub /></Link>
+              <Link target="blank" to="https://lively-rugelach-726e5c.netlify.app/" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium">Live Link <LuLink /></Link>
+            </div>
+            <p className="mt-3 text-sm text-slate-400">#Note: Currently working on this porject</p>
           </div>
         </div>
       </div>
