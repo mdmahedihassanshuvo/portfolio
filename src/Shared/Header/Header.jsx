@@ -38,7 +38,8 @@ const Header = () => {
         Portfolio
       </NavLink>
       <NavLink
-        to="/resume"
+        target="blank"
+        to="https://drive.google.com/file/d/1Ub7SSYDTSkDlzUlcvP9DCB-ZqOFgDloW/view?usp=sharing"
         className={({ isActive }) =>
           isActive ? "text-[#5e3bee] px-3 py-2 border-red-600 text-xl font-medium border-b-2 rounded-b-xl mx-2 " : "px-3 py-2 hover:text-[#5e3bee] text-xl font-medium"
         }
