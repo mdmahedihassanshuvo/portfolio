@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo/logo.png";
 
@@ -8,31 +7,39 @@ const Header = () => {
       <NavLink
         to="/"
         className={({ isActive }) =>
-          isActive ? "text-[#5e3bee] px-3 py-2 border-red-600 text-xl font-medium border-b-2 rounded-b-xl mx-2 " : "px-3 py-2 hover:text-[#5e3bee] text-xl font-medium"
+          isActive
+            ? "text-[#5e3bee] px-3 py-2 border-red-600 text-xl font-medium border-b-2 rounded-b-xl mx-2 "
+            : "px-3 py-2 hover:text-[#5e3bee] text-xl font-medium"
         }
       >
         Home
       </NavLink>
       <NavLink
-        to="/about"
+        to="about"
         className={({ isActive }) =>
-          isActive ? "text-[#5e3bee] px-3 py-2 border-red-600 text-xl font-medium border-b-2 rounded-b-xl mx-2 " : "px-3 py-2 hover:text-[#5e3bee] text-xl font-medium"
+          isActive
+            ? "text-[#5e3bee] px-3 py-2 border-red-600 text-xl font-medium border-b-2 rounded-b-xl mx-2 "
+            : "px-3 py-2 hover:text-[#5e3bee] text-xl font-medium"
         }
       >
         About Me
       </NavLink>
       <NavLink
-        to="/skill"
+        to="skill"
         className={({ isActive }) =>
-          isActive ? "text-[#5e3bee] px-3 py-2 border-red-600 text-xl font-medium border-b-2 rounded-b-xl mx-2 " : "px-3 py-2 hover:text-[#5e3bee] text-xl font-medium"
+          isActive
+            ? "text-[#5e3bee] px-3 py-2 border-red-600 text-xl font-medium border-b-2 rounded-b-xl mx-2 "
+            : "px-3 py-2 hover:text-[#5e3bee] text-xl font-medium"
         }
       >
         Skills
       </NavLink>
       <NavLink
-        to="/portfolio"
+        to="portfolio"
         className={({ isActive }) =>
-          isActive ? "text-[#5e3bee] px-3 py-2 border-red-600 text-xl font-medium border-b-2 rounded-b-xl mx-2 " : "px-3 py-2 hover:text-[#5e3bee] text-xl font-medium"
+          isActive
+            ? "text-[#5e3bee] px-3 py-2 border-red-600 text-xl font-medium border-b-2 rounded-b-xl mx-2 "
+            : "px-3 py-2 hover:text-[#5e3bee] text-xl font-medium"
         }
       >
         Portfolio
@@ -41,7 +48,9 @@ const Header = () => {
         target="blank"
         to="https://drive.google.com/file/d/1Ub7SSYDTSkDlzUlcvP9DCB-ZqOFgDloW/view?usp=sharing"
         className={({ isActive }) =>
-          isActive ? "text-[#5e3bee] px-3 py-2 border-red-600 text-xl font-medium border-b-2 rounded-b-xl mx-2 " : "px-3 py-2 hover:text-[#5e3bee] text-xl font-medium"
+          isActive
+            ? "text-[#5e3bee] px-3 py-2 border-red-600 text-xl font-medium border-b-2 rounded-b-xl mx-2 "
+            : "px-3 py-2 hover:text-[#5e3bee] text-xl font-medium"
         }
       >
         Resume
@@ -85,7 +94,10 @@ const Header = () => {
           <ul className="menu menu-horizontal px-1 text-xl">{navList}</ul>
         </div>
         <div className="navbar-end">
-          <Link to="/contact" className="btn btn-ghost border-[1px] border-[#5e3bee]">
+          <Link
+            to="contact"
+            className="btn btn-ghost border-[1px] border-[#5e3bee]"
+          >
             Contact Me
           </Link>
         </div>
