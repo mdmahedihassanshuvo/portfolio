@@ -37,18 +37,21 @@ const Contact = () => {
       <div className="md:mt-5 mt-3">
         <div className="flex justify-center items-center md:gap-6 gap-3 md:text-2xl">
           <Link
+            target="blank"
             to="https://www.facebook.com/shuvo6795"
             className="bg-white text-blue-600 p-3 rounded-full hover:text-black"
           >
             <FaFacebook />
           </Link>
           <Link
+            target="blank"
             to="https://www.linkedin.com/in/md-mahedi-hassan-shuvo/"
             className="bg-white text-blue-600 p-3 rounded-full hover:text-black"
           >
             <FaLinkedin />
           </Link>
           <Link
+            target="blank"
             to="https://github.com/mdmahedihassanshuvo"
             className="bg-white text-blue-600 p-3 rounded-full hover:text-black"
           >

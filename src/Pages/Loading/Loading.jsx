@@ -1,5 +1,3 @@
-import load from "../../assets/loading/load.json";
-
 const Loading = () => {
   return (
     <div className="flex justify-center items-center min-h-[calc(100vh-68px)]">
