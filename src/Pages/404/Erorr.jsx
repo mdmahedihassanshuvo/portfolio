@@ -1,24 +1,19 @@
-import { Link } from "react-router-dom";
-import errorImg from "../../assets/404/error.jpg";
-const Erorr = () => {
-  return (
-    <div className="text-center md:relative ">
-      <img
-        className="w-full md:max-h-screen md:block hidden"
-        src={errorImg}
-        alt=""
-      />
-      <div className="flex-col md:justify-center md:items-center md:h-auto h-[400px] ">
-        <h3 className="text-2xl md:hidden">404 url not found</h3>
-        <Link
-          to="/"
-          className="text-xl underline text-blue-600 cursor-pointer md:absolute md:bottom-[30%] top-96 md:left-[45%]"
-        >
-          Back To Home
-        </Link>
-      </div>
-    </div>
-  );
+import React from 'react';
+import { FaceFrownIcon } from '@heroicons/react/24/solid'
+import { useRouteError } from 'react-router-dom';
+
+const Error = () => {
+    const error = useRouteError()
+    console.log(error)
+    const {status, statusText, data} = error
+    return (
+        <div className='flex flex-col justify-center gap-1 items-center min-h-screen'>
+            <div><FaceFrownIcon className="h-16 w-16 text-blue-500" /></div>
+            <h2 className='md:text-6xl text-3xl font-bold text-red-600'>{status}</h2>
+            <h2 className='md:text-6xl text-3xl'>{statusText}</h2>
+            <p className='md:text-xl text-base underline cursor-not-allowed'>{data}</p>
+        </div>
+    );
 };
 
-export default Erorr;
+export default Error;
