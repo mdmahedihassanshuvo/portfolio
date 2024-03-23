@@ -2,6 +2,7 @@ import { FaFacebook, FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { Helmet } from "react-helmet-async";
 import "./Contact.css";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
