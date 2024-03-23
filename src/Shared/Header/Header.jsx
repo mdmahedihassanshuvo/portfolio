@@ -15,7 +15,7 @@ const Header = () => {
         Home
       </NavLink>
       <NavLink
-        to="about"
+        to="/about"
         className={({ isActive }) =>
           isActive
             ? "text-[#5e3bee] px-3 py-2 border-red-600 text-xl font-medium border-b-2 rounded-b-xl mx-2 "
@@ -25,7 +25,7 @@ const Header = () => {
         About Me
       </NavLink>
       <NavLink
-        to="skill"
+        to="/skill"
         className={({ isActive }) =>
           isActive
             ? "text-[#5e3bee] px-3 py-2 border-red-600 text-xl font-medium border-b-2 rounded-b-xl mx-2 "
@@ -35,7 +35,7 @@ const Header = () => {
         Skills
       </NavLink>
       <NavLink
-        to="portfolio"
+        to="/portfolio"
         className={({ isActive }) =>
           isActive
             ? "text-[#5e3bee] px-3 py-2 border-red-600 text-xl font-medium border-b-2 rounded-b-xl mx-2 "
@@ -95,7 +95,7 @@ const Header = () => {
         </div>
         <div className="navbar-end">
           <Link
-            to="contact"
+            to="/contact"
             className="btn btn-ghost border-[1px] border-[#5e3bee]"
           >
             Contact Me
