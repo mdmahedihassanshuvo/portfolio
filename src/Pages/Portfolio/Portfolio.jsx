@@ -41,7 +41,7 @@ const Portfolio = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-10 md:mt-[100px]">
         <div className="bg-white rounded-lg">
           <div className="coverdiv text-white overflow-hidden ">
-            <div className="md:w-full w-[350px] md:h-[250px] overflow-hidden relative cursor-pointer">
+            <div className="md:w-full w-[350px] md:h-[250px] overflow-hidden md:relative cursor-pointer">
               <img
                 className="portfolio-image w-full md:p-4 md:absolute md:left-0 md:right-0 md:top-0"
                 src={porject1}
@@ -74,7 +74,7 @@ const Portfolio = () => {
           <div className="coverdiv text-white overflow-hidden ">
             <div className="md:w-full w-[350px] md:h-[250px] overflow-hidden relative cursor-pointer">
               <img
-                className="portfolio-image w-full md:p-4  absolute left-0 right-0 top-0"
+                className="portfolio-image w-full md:p-4  md:absolute left-0 right-0 top-0"
                 src={porject2}
                 alt="Bistro-boss"
               />
@@ -107,7 +107,7 @@ const Portfolio = () => {
           <div className="coverdiv text-white overflow-hidden ">
             <div className="md:w-full w-[350px] md:h-[250px] overflow-hidden relative cursor-pointer">
               <img
-                className="portfolio-image w-full md:p-4  absolute left-0 right-0 top-0"
+                className="portfolio-image w-full md:p-4  md:absolute left-0 right-0 top-0"
                 src={porject3}
                 alt="Bistro-boss"
               />
@@ -138,7 +138,7 @@ const Portfolio = () => {
           <div className="coverdiv text-white overflow-hidden ">
             <div className="md:w-full w-[350px] md:h-[250px] overflow-hidden relative cursor-pointer">
               <img
-                className="portfolio-image w-full md:p-4  absolute left-0 right-0 top-0"
+                className="portfolio-image w-full md:p-4  md:absolute left-0 right-0 top-0"
                 src={porject5}
                 alt="Bistro-boss"
               />
@@ -172,7 +172,7 @@ const Portfolio = () => {
           <div className="coverdiv text-white overflow-hidden ">
             <div className="md:w-full w-[350px] md:h-[250px] overflow-hidden relative cursor-pointer">
               <img
-                className="portfolio-image w-full md:p-4  absolute left-0 right-0 top-0"
+                className="portfolio-image w-full md:p-4  md:absolute left-0 right-0 top-0"
                 src={porject4}
                 alt="Bistro-boss"
               />
