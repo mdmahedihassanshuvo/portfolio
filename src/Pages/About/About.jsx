@@ -20,7 +20,7 @@ const About = () => {
           <hr className="border-2" />
           <div className="md:mt-5 mt-2 md:space-y-4">
             <p className="md:text-3xl text-xl font-bold">
-              Hi I'm, <br />
+              Hi I am, <br />
               Md. Mahedi Hassan Shuvo
             </p>
             <p className="md:text-2xl text-lg font-medium">
