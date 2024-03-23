@@ -1,13 +1,21 @@
-import React from "react";
 import { FaFacebook, FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import { MdMarkEmailUnread } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useNavigation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import "./Contact.css";
+import Loading from "../Loading/Loading";
 
 const Contact = () => {
+  const navigation = useNavigation();
+
+  if (navigation.state === "loading") {
+    return <Loading />;
+  }
   return (
-    <div id="contact" className="md:p-[40px] p-5 mx-auto flex flex-col justify-center items-center md:h-[500px] h-[400px]">
+    <div
+      id="contact"
+      className="md:p-[40px] p-5 mx-auto flex flex-col justify-center items-center md:h-[500px] h-[400px]"
+    >
       <Helmet title="MH - Contact" />
       <div className="">
         <h3 className="text-center md:text-4xl text-2xl font-bold">

@@ -1,17 +1,22 @@
-import React from "react";
 import porject1 from "../../assets/Project/bistro.png";
 import porject2 from "../../assets/Project/sport.png";
 import porject3 from "../../assets/Project/furniro.png";
 import porject4 from "../../assets/Project/canvix.png";
 import porject5 from "../../assets/Project/tourist.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { FaGithub } from "react-icons/fa6";
 import { LuLink } from "react-icons/lu";
 
 import "./Portfolio.css";
+import Loading from "../Loading/Loading";
 
 const Portfolio = () => {
+  const navigation = useNavigation();
+
+  if (navigation.state === "loading") {
+    return <Loading />;
+  }
   return (
     <div className="md:py-[40px] p-5 md:px-[100px] bg-[#f3f3f3]">
       <Helmet title="MH - Portfolio" />
@@ -54,8 +59,20 @@ const Portfolio = () => {
             <h3 className="text-2xl font-semibold ">Bistro Boss Restaurant</h3>
             <p className="text-sm text-slate-400 mt-2">E-commerce website</p>
             <div className="flex justify-between md:mt-3 items-center">
-              <Link target="blank" to="https://github.com/mdmahedihassanshuvo/bistro-client" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium">Sourch code <FaGithub /></Link>
-              <Link target="blank" to="https://bistro-60b2f.web.app/" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium">Live Link <LuLink /></Link>
+              <Link
+                target="blank"
+                to="https://github.com/mdmahedihassanshuvo/bistro-client"
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium"
+              >
+                Sourch code <FaGithub />
+              </Link>
+              <Link
+                target="blank"
+                to="https://bistro-60b2f.web.app/"
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium"
+              >
+                Live Link <LuLink />
+              </Link>
             </div>
           </div>
         </div>
@@ -71,10 +88,24 @@ const Portfolio = () => {
           </div>
           <div className="bg-[#f7f7f7] md:m-4 p-4">
             <h3 className="text-2xl font-semibold ">Sports Mania</h3>
-            <p className="text-sm text-slate-400 mt-2">School management website</p>
+            <p className="text-sm text-slate-400 mt-2">
+              School management website
+            </p>
             <div className="flex justify-between md:mt-3 items-center">
-              <Link target="blank" to="https://github.com/mdmahedihassanshuvo/SportsMania" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium">Sourch code <FaGithub /></Link>
-              <Link target="blank" to="https://sportsmania-f05ea.web.app/" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium">Live Link <LuLink /></Link>
+              <Link
+                target="blank"
+                to="https://github.com/mdmahedihassanshuvo/SportsMania"
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium"
+              >
+                Sourch code <FaGithub />
+              </Link>
+              <Link
+                target="blank"
+                to="https://sportsmania-f05ea.web.app/"
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium"
+              >
+                Live Link <LuLink />
+              </Link>
             </div>
           </div>
         </div>
@@ -92,8 +123,20 @@ const Portfolio = () => {
             <h3 className="text-2xl font-semibold ">Furniro</h3>
             <p className="text-sm text-slate-400 mt-2">E-commerce website</p>
             <div className="flex justify-between md:mt-3 items-center">
-              <Link target="blank" to="https://github.com/mdmahedihassanshuvo/furniro-client" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium">Sourch code <FaGithub /></Link>
-              <Link target="blank" to="https://fastidious-cuchufli-17d13f.netlify.app/" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium">Live Link <LuLink /></Link>
+              <Link
+                target="blank"
+                to="https://github.com/mdmahedihassanshuvo/furniro-client"
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium"
+              >
+                Sourch code <FaGithub />
+              </Link>
+              <Link
+                target="blank"
+                to="https://fastidious-cuchufli-17d13f.netlify.app/"
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium"
+              >
+                Live Link <LuLink />
+              </Link>
             </div>
           </div>
         </div>
@@ -111,10 +154,24 @@ const Portfolio = () => {
             <h3 className="text-2xl font-semibold ">Tourist</h3>
             <p className="text-sm text-slate-400 mt-2">Travel agency website</p>
             <div className="flex justify-between md:mt-3 items-center">
-              <Link target="blank" to="https://github.com/mdmahedihassanshuvo/travel-client" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium">Sourch code <FaGithub /></Link>
-              <Link target="blank" to="https://gilded-maamoul-183923.netlify.app/" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium">Live Link <LuLink /></Link>
+              <Link
+                target="blank"
+                to="https://github.com/mdmahedihassanshuvo/travel-client"
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium"
+              >
+                Sourch code <FaGithub />
+              </Link>
+              <Link
+                target="blank"
+                to="https://gilded-maamoul-183923.netlify.app/"
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium"
+              >
+                Live Link <LuLink />
+              </Link>
             </div>
-            <p className="mt-3 text-sm text-slate-400">#Note: Currently working on this porject</p>
+            <p className="mt-3 text-sm text-slate-400">
+              #Note: Currently working on this porject
+            </p>
           </div>
         </div>
         <div className="bg-white rounded-lg">
@@ -131,10 +188,24 @@ const Portfolio = () => {
             <h3 className="text-2xl font-semibold ">Canvix</h3>
             <p className="text-sm text-slate-400 mt-2">Agency website</p>
             <div className="flex justify-between md:mt-3 items-center">
-              <Link target="blank" to="https://github.com/mdmahedihassanshuvo/canvix" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium">Sourch code <FaGithub /></Link>
-              <Link target="blank" to="https://lively-rugelach-726e5c.netlify.app/" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium">Live Link <LuLink /></Link>
+              <Link
+                target="blank"
+                to="https://github.com/mdmahedihassanshuvo/canvix"
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium"
+              >
+                Sourch code <FaGithub />
+              </Link>
+              <Link
+                target="blank"
+                to="https://lively-rugelach-726e5c.netlify.app/"
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 rounded-lg p-2 text-white text-base font-medium"
+              >
+                Live Link <LuLink />
+              </Link>
             </div>
-            <p className="mt-3 text-sm text-slate-400">#Note: Currently working on this porject</p>
+            <p className="mt-3 text-sm text-slate-400">
+              #Note: Currently working on this porject
+            </p>
           </div>
         </div>
       </div>

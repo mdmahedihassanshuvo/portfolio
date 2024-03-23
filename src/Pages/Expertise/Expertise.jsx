@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+t";
 import skill1 from "../../assets/skills/skill1.png";
 import skill2 from "../../assets/skills/skill2.png";
 import skill3 from "../../assets/skills/skill3.png";
@@ -12,10 +12,17 @@ import skill10 from "../../assets/skills/skill10.png";
 import skill11 from "../../assets/skills/skill11.png";
 import "./Expertise.css";
 import { Helmet } from "react-helmet-async";
+import { useNavigation } from "react-router-dom";
+import Loading from "../Loading/Loading";
 
 const Expertise = () => {
   const [active, setActive] = useState(true);
   const [enable, setEnable] = useState(false);
+  const navigation = useNavigation();
+
+  if (navigation.state === "loading") {
+    return <Loading />;
+  }
   const handleActive = () => {
     setActive(false);
     setEnable(true);
