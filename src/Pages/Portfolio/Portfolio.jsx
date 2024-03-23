@@ -3,20 +3,14 @@ import porject2 from "../../assets/Project/sport.png";
 import porject3 from "../../assets/Project/furniro.png";
 import porject4 from "../../assets/Project/canvix.png";
 import porject5 from "../../assets/Project/tourist.png";
-import { Link, useNavigation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { FaGithub } from "react-icons/fa6";
 import { LuLink } from "react-icons/lu";
 
 import "./Portfolio.css";
-import Loading from "../Loading/Loading";
 
 const Portfolio = () => {
-  const navigation = useNavigation();
-
-  if (navigation.state === "loading") {
-    return <Loading />;
-  }
   return (
     <div className="md:py-[40px] p-5 md:px-[100px] bg-[#f3f3f3]">
       <Helmet title="MH - Portfolio" />
@@ -49,7 +43,7 @@ const Portfolio = () => {
           <div className="coverdiv text-white overflow-hidden ">
             <div className="md:w-full w-[350px] md:h-[250px] overflow-hidden relative cursor-pointer">
               <img
-                className="portfolio-image w-full md:p-4  absolute left-0 right-0 top-0"
+                className="portfolio-image w-full md:p-4 md:absolute md:left-0 md:right-0 md:top-0"
                 src={porject1}
                 alt="Bistro-boss"
               />

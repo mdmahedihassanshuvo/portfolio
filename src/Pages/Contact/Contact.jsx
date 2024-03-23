@@ -1,16 +1,9 @@
 import { FaFacebook, FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import { MdMarkEmailUnread } from "react-icons/md";
-import { Link, useNavigation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import "./Contact.css";
-import Loading from "../Loading/Loading";
 
 const Contact = () => {
-  const navigation = useNavigation();
-
-  if (navigation.state === "loading") {
-    return <Loading />;
-  }
   return (
     <div
       id="contact"

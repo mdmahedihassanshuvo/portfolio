@@ -1,14 +1,7 @@
-import { useNavigation } from "react-router-dom";
 import person2 from "../../assets/Person/person2.png";
 import { Helmet } from "react-helmet-async";
-import Loading from "../Loading/Loading";
 
 const About = () => {
-  const navigation = useNavigation();
-
-  if (navigation.state === "loading") {
-    return <Loading />;
-  }
   return (
     <div className="md:py-[40px] p-[20px]">
       <Helmet title="MH - About Me" />
