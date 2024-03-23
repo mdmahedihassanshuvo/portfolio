@@ -1,13 +1,14 @@
-import { Outlet, useNavigation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Header from "../Shared/Header/Header";
 import Footer from "../Shared/Footer/Footer";
 import Loading from "../Pages/Loading/Loading";
+import { useState } from "react";
 // import "./Main.css";
 
 const Main = () => {
-  const navigation = useNavigation();
+  const [load, setLoad] = useState(true);
 
-  if (navigation.state === "loading") {
+  if (load) {
     return <Loading />;
   }
 
